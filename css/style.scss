@@ -88,12 +88,19 @@ body {
     }
 }
 
+
+
 .main {
-    &__bg-image {
+    &__home-header {
+        padding-bottom: 128px;
         position: relative;
+        
+        & img {
+            width: 100%;
+        }
     }
 
-    &__bg-image-text-wrapper {
+    &__home-header-text-wrapper {
         color: #fff;
         padding-left: 110px;
         position: absolute;
@@ -123,8 +130,69 @@ body {
         }
     }
 
-    &__bg-image-link-wrapper {
+    &__home-header-link-wrapper {
         margin-bottom: 104px;
     }
+
+
+
+    &__what-we-do-wrapper {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding-bottom: 128px;
+    }
+    
+    &__what-we-do-titles {
+        text-align: center;
+        & p {
+            margin-bottom: 16px;
+            line-height: 18.75px;
+            color: $black;
+            text-transform: uppercase;
+        }
+
+        & h2 {
+            margin-bottom: 64px;
+            color: $black;
+            font-size: $heading2;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
+        }
+    }
+        
+    &__what-we-do-card-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        & div {
+            padding: 80px;
+            background: $lightorange;
+
+            & img {
+                padding: 12px;
+                border-radius: 50%;
+                background: $primary;
+            }
+
+            & h4 {
+                margin: 24px 0 8px 0;
+                font-weight: 700;
+                font-size: $heading4;
+                line-height: 44px;
+                letter-spacing: -0.01em;
+                color: $black;
+                text-transform: uppercase;
+            }
+
+            & p {
+                color: $black;
+                line-height: 24px;
+            }
+
+        }
+    }
 }
+
 
