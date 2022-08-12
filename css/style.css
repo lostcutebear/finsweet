@@ -27,6 +27,25 @@ body {
   padding: 24px 64px;
 }
 
+.titles {
+  text-align: center;
+}
+.titles p {
+  margin-bottom: 16px;
+  line-height: 18.75px;
+  color: #161722;
+  text-transform: uppercase;
+}
+.titles h2 {
+  margin-bottom: 64px;
+  color: #161722;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  line-height: 64px;
+}
+
 .header {
   background: #0D0D0D;
 }
@@ -104,23 +123,6 @@ body {
   margin: 0 auto;
   padding-bottom: 128px;
 }
-.main__what-we-do-titles {
-  text-align: center;
-}
-.main__what-we-do-titles p {
-  margin-bottom: 16px;
-  line-height: 18.75px;
-  color: #161722;
-  text-transform: uppercase;
-}
-.main__what-we-do-titles h2 {
-  margin-bottom: 64px;
-  color: #161722;
-  font-size: 48px;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-}
 .main__what-we-do-card-wrapper {
   display: flex;
   align-items: center;
@@ -147,4 +149,60 @@ body {
 .main__what-we-do-card-wrapper div p {
   color: #161722;
   line-height: 24px;
+}
+.main__welcome-wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.main__welcome-desc {
+  margin: -32px 0 90px 0px;
+}
+.main__welcome-desc p {
+  margin: 0 auto;
+  max-width: 846px;
+  text-align: center;
+  line-height: 24px;
+  color: #161722;
+}
+.main__welcome-link-btn {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.main__welcome-img-wrapper {
+  padding-bottom: 64px;
+  display: flex;
+  gap: 24px;
+}
+.main__welcome-img img {
+  border-radius: 30px;
+}
+.main__welcome-img:nth-child(2) {
+  margin-top: 48px;
+}
+.main__welcome-bottom-wrapper {
+  padding-bottom: 128px;
+}
+.main__welcome-bottom-titles h4 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: #161722;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  line-height: 44px;
+}
+.main__welcome-bottom-text p {
+  margin: 0 auto 16px auto;
+  text-align: center;
+  width: 512px;
+}
+.main__welcome-bottom-link {
+  text-align: center;
+}
+.main__welcome-bottom-link a {
+  margin-right: 6px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  line-height: 16px;
+  color: #161722;
 }/*# sourceMappingURL=style.css.map */
