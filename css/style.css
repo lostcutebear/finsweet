@@ -4,20 +4,27 @@ body {
   font-size: 16px;
 }
 
-.nav-btn {
-  padding: 20px 48px;
+.nav-btn, .btn-primary {
   background: #FFD2A4;
-  /* Note: backdrop-filter has minimal browser support */
-  -webkit-backdrop-filter: blur(80px);
-          backdrop-filter: blur(80px);
   border-radius: 12px;
   line-height: 16px;
   color: #1C1D28;
   text-transform: uppercase;
 }
-.nav-btn:hover {
+.nav-btn:hover, .btn-primary:hover {
   transition: 0.24s linear;
   background: #F2C79B;
+}
+
+.nav-btn {
+  /* Note: backdrop-filter has minimal browser support */
+  -webkit-backdrop-filter: blur(80px);
+          backdrop-filter: blur(80px);
+  padding: 20px 48px;
+}
+
+.btn-primary {
+  padding: 24px 64px;
 }
 
 .header {
@@ -54,4 +61,37 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 50px;
+}
+
+.main__bg-image {
+  position: relative;
+}
+.main__bg-image-text-wrapper {
+  color: #fff;
+  padding-left: 110px;
+  position: absolute;
+  top: 128px;
+  left: 0;
+}
+.main__bg-image-text-wrapper p:first-child {
+  font-weight: 700;
+  line-height: 18.75px;
+  text-transform: uppercase;
+}
+.main__bg-image-text-wrapper h1 {
+  max-width: 592px;
+  margin-top: 16px;
+  margin-bottom: 62px;
+  font-size: 64px;
+  line-height: 82px;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.main__bg-image-text-wrapper p:last-child {
+  width: 308px;
+  line-height: 24px;
+}
+.main__bg-image-link-wrapper {
+  margin-bottom: 104px;
 }/*# sourceMappingURL=style.css.map */
