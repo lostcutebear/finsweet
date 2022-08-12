@@ -12,3 +12,72 @@ $black: #161722;
 $primary: #FFD2A4;
 $lightorange: #fff5eb;
 $grey: #f5f2f060;
+
+$font700: 700;
+
+body {
+    font-family: $roboto-condensed;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.nav {
+    &-btn {
+        padding: 20px 48px;
+        background: #FFD2A4;
+
+        /* Note: backdrop-filter has minimal browser support */
+
+        backdrop-filter: blur(80px);
+        border-radius: 12px;
+        line-height: 16px;
+        color: #1C1D28;
+        text-transform: uppercase;
+
+        &:hover {
+            transition: .24s linear;
+            background: #F2C79B;
+        }
+    }
+}
+
+.header {
+    background: #0D0D0D;
+    &__container {
+        padding: 24px 110px;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__vertical-line {
+        width: 80px;
+        background: #fff;
+        border: 1px solid #FFFFFF;
+        transform: rotate(90deg);
+        opacity: 0.1;
+    }
+
+    &__nav-list {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+
+        & li a {
+            line-height: 18.75px;
+            color: rgba(255, 255, 255, 0.903);
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+    }
+
+    &__nav-left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+    }
+}
