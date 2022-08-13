@@ -272,6 +272,57 @@ body {
             color: $black;
         }
     }
+
+    
+    &__benefits-wrapper {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    &__benefits-titles {
+        & p {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__benefits-img-wrapper {
+        display: flex;
+        gap: 24px;
+
+        & div {
+            position: relative;
+
+            & h5 {
+                width: 238px;
+                color: #fff;
+                font-size: $heading5;
+                line-height: 28.13px;
+                letter-spacing: -0.01em;
+            }
+
+            & h5, & p {
+                position: absolute;
+                bottom: 32px;
+                left: 32px;
+            }
+        }
+
+        & div:first-child {
+
+            & h5, & p {
+                top: 208px;
+            }
+            & p {
+                width: 238px;
+                line-height: 24px;
+                color: rgba(255, 255, 255, 0.785);
+            }
+        }
+    }
+
+    &__benefits-img {
+        
+    }
 }
 
 

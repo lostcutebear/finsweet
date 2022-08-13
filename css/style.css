@@ -205,4 +205,38 @@ body {
   font-family: "Roboto", sans-serif;
   line-height: 16px;
   color: #161722;
+}
+.main__benefits-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.main__benefits-titles p {
+  margin-bottom: 20px;
+}
+.main__benefits-img-wrapper {
+  display: flex;
+  gap: 24px;
+}
+.main__benefits-img-wrapper div {
+  position: relative;
+}
+.main__benefits-img-wrapper div h5 {
+  width: 238px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 28.13px;
+  letter-spacing: -0.01em;
+}
+.main__benefits-img-wrapper div h5, .main__benefits-img-wrapper div p {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+}
+.main__benefits-img-wrapper div:first-child h5, .main__benefits-img-wrapper div:first-child p {
+  top: 208px;
+}
+.main__benefits-img-wrapper div:first-child p {
+  width: 238px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.785);
 }/*# sourceMappingURL=style.css.map */
