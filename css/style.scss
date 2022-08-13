@@ -40,6 +40,22 @@ body {
     backdrop-filter: blur(80px);
     padding: 20px 48px;
 }
+
+.btn-secondary {
+    cursor: pointer;
+    padding: 24px 64px;
+    background: #161722;
+    backdrop-filter: blur(80px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 12px;
+    line-height: 16px;
+    color: $primary;
+    text-transform: uppercase;
+    transition: .25s linear;
+    &:hover {
+        color: #fff;
+    }
+}
     
 
 .btn-primary { 
@@ -170,6 +186,7 @@ body {
         & div {
             padding: 80px;
             background: $lightorange;
+            border-bottom: 16px solid $primary;
 
             & img {
                 padding: 12px;
@@ -319,5 +336,164 @@ body {
             line-height: 24px;
             color: rgba(255, 255, 255, 0.779);
         }
+    }
+
+
+    &__sermons-wrapper {
+        padding: 128px 110px;
+    }
+
+    &__sermons-titles {
+        margin-bottom: 64px;
+        & h2 {
+            margin: 0 auto;
+            width: 554px;
+        }
+    }
+        
+    &__sermons-item {
+        display: flex;
+    }
+    
+    &__sermons-content {
+        background: $lightorange;
+        padding: 61px 83px 33px;
+        position: relative;
+    }
+    
+    &__sermons-date {
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        & h5 {
+            font-size: $heading5;
+            font-weight: 700;
+            line-height: 28.13px;
+            letter-spacing: -0.01em;
+            color: $black;
+        }
+
+        & p {
+            line-height: 18.75px;
+            color: $black;
+        }
+    }
+    
+    &__sermons-title-desc {
+        & p:first-child {
+            margin-bottom: 16px;
+            font-size: 12px;
+            line-height: 14.06px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            background: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        & h5 {
+            margin-bottom: 16px;
+            width: 210px;
+            font-size: $heading5;
+            font-weight: 700;
+            line-height: 28.13px;
+            letter-spacing: -0.01em;
+            color: $black;
+        }
+
+        & p:last-child {
+            margin-bottom: 34px;
+            line-height: 24px;
+            color: rgba(22, 23, 34, 0.781);
+        }
+    }
+    
+    &__sermons-time, &__sermons-location {
+        display: flex;
+        gap: 16px;
+    }
+    
+    &__sermons-day, &__sermons-address {
+        & p {
+            line-height: 24px;
+            color: $black;
+            width: 137px;
+        }
+    }
+
+    &__sermons-day {
+        margin-bottom: 16px;
+    }
+
+    &__sermons-address {
+        margin-bottom: 32px;
+    }
+
+    &__sermons-link {
+        margin-top: 48px;
+        text-align: right;
+        & a {
+            font-size: 24px;
+            line-height: 32px;
+            color: $black;
+        }
+    }
+
+
+
+    &__cta {
+      
+    }
+    
+    &__cta-background {
+        position: relative;
+    }
+    
+    &__cta-image {
+        width: 100%;
+    }
+    
+    &__cta-inner {
+        width: 768px;
+        height: 480px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        backdrop-filter: blur(40px);
+        border-bottom: 16px solid $primary;
+    }
+    
+    &__cta-inner-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 117px;
+        padding: 72px 48px;
+    }
+    
+    &__cta-content {
+        & h2 {
+            font-weight: 700;
+            font-size: $heading2;
+            line-height: 64px;
+            letter-spacing: -0.01em;
+            color: $black;
+            width: 368px;
+            text-transform: uppercase;
+        }
+
+        & p {
+            width: 302px;
+            margin: 16px 0 32px 0;
+            line-height: 24px;
+            color: rgba(22, 23, 34, 0.781);
+        }
+    }
+    
+    &__cta-quote-icon {
+
     }
 }
