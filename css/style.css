@@ -206,37 +206,44 @@ body {
   line-height: 16px;
   color: #161722;
 }
-.main__benefits-wrapper {
-  max-width: 1300px;
-  margin: 0 auto;
+.main__benefits {
+  background: #F5F2F0;
 }
-.main__benefits-titles p {
-  margin-bottom: 20px;
+.main__benefits-wrapper {
+  margin: 0 auto;
+  padding: 128px 110px;
 }
 .main__benefits-img-wrapper {
   display: flex;
   gap: 24px;
 }
-.main__benefits-img-wrapper div {
+.main__benefits-link {
+  transition: all 0.3s linear;
+}
+.main__benefits-link:hover {
+  transform: scale(1.04);
+}
+.main__benefits-img {
   position: relative;
 }
-.main__benefits-img-wrapper div h5 {
-  width: 238px;
-  color: #fff;
-  font-size: 24px;
-  line-height: 28.13px;
-  letter-spacing: -0.01em;
+.main__benefits-img img {
+  filter: brightness(0.84);
 }
-.main__benefits-img-wrapper div h5, .main__benefits-img-wrapper div p {
+.main__benefits-text-wrapper {
   position: absolute;
   bottom: 32px;
   left: 32px;
 }
-.main__benefits-img-wrapper div:first-child h5, .main__benefits-img-wrapper div:first-child p {
-  top: 208px;
+.main__benefits-text-wrapper h5 {
+  max-width: 238px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+  letter-spacing: -0.01em;
+  color: #fff;
 }
-.main__benefits-img-wrapper div:first-child p {
-  width: 238px;
+.main__benefits-text-wrapper p {
+  margin-top: 16px;
   line-height: 24px;
-  color: rgba(255, 255, 255, 0.785);
+  color: rgba(255, 255, 255, 0.779);
 }/*# sourceMappingURL=style.css.map */
