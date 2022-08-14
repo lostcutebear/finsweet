@@ -28,9 +28,10 @@ body {
     line-height: 16px;
     color: #1C1D28;
     text-transform: uppercase;
+    transition: .24s linear;
+    cursor: pointer;
     
     &:hover {
-        transition: .24s linear;
         background: #F2C79B;
     }
 }
@@ -289,15 +290,17 @@ body {
 
     &__benefits {
         background: #F5F2F0;
+        padding: 128px 0;
     }
     
     &__benefits-wrapper {
+        max-width: 1380px;
         margin: 0 auto;
-        padding: 128px 110px;
     }
 
     &__benefits-img-wrapper {
         display: flex;
+        justify-content: center;
         gap: 24px;
     }
 
@@ -338,9 +341,14 @@ body {
         }
     }
 
+    
+    &__sermons {
+        padding: 128px 0;
+    }
 
     &__sermons-wrapper {
-        padding: 128px 110px;
+        max-width: 1280px;
+        margin: 0 auto;
     }
 
     &__sermons-titles {
@@ -453,6 +461,7 @@ body {
     
     &__cta-image {
         width: 100%;
+        filter: brightness(0.91);
     }
     
     &__cta-inner {
@@ -561,3 +570,108 @@ body {
         line-height: 24px;
     }
 }
+
+.footer {
+    background: $black;
+    &__container{
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 64px 0;
+    }
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content-left-logo{
+        & p {
+            margin: 16px 0 32px 0;
+            font-size: 12px;
+            line-height: 14.06px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+
+    &__content-left-address {
+        display: flex;
+        flex-direction: column;
+        & a {
+            font-size: 12px;
+            line-height: 14px;
+            color: #fff;
+            text-transform: uppercase;   
+        }
+
+        & a:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__links {
+        & p {
+            margin-bottom: 20px;
+            line-height: 24px;
+            color: #fff;
+        }
+    }
+
+    &__links-list {
+        & li:not(:last-child) {
+            margin-bottom: 18px;
+        }
+    }
+    
+    &__list-link {
+        font-size: 12px;
+        line-height: 14px;
+        color: rgba(255, 255, 255, 0.779);
+    }
+
+    &__connect{
+        & p {
+            margin-bottom: 20px;
+            line-height: 24px;
+            color: #fff;
+        }
+    }
+        
+    &__social-wrapper{
+        display: flex;
+        gap: 20px;
+    }
+
+    &__subscription{
+        & h4 {
+            margin-bottom: 32px;
+            width: 377px;
+            font-size: $heading4;
+            line-height: -0.01em;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        & form {
+            width: 512px;
+            & input[type=email] {
+                color: rgba(255, 255, 255, 0.8);
+                width: 311px;
+                padding: 24px 50px 24px 24px;
+                background: transparent;
+                border: 1px solid rgba(255, 255, 255, 0.15);
+                border-radius: 12px;
+                outline: none;
+                &::placeholder {
+                    color: rgba(255, 255, 255, 0.8);
+                }
+            }
+
+            & button {
+                margin-left: -50px;
+            }
+        }
+    }
+}
+

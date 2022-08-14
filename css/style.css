@@ -10,9 +10,10 @@ body {
   line-height: 16px;
   color: #1C1D28;
   text-transform: uppercase;
+  transition: 0.24s linear;
+  cursor: pointer;
 }
 .nav-btn:hover, .btn-primary:hover {
-  transition: 0.24s linear;
   background: #F2C79B;
 }
 
@@ -226,13 +227,15 @@ body {
 }
 .main__benefits {
   background: #F5F2F0;
+  padding: 128px 0;
 }
 .main__benefits-wrapper {
+  max-width: 1380px;
   margin: 0 auto;
-  padding: 128px 110px;
 }
 .main__benefits-img-wrapper {
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
 .main__benefits-link {
@@ -265,8 +268,12 @@ body {
   line-height: 24px;
   color: rgba(255, 255, 255, 0.779);
 }
+.main__sermons {
+  padding: 128px 0;
+}
 .main__sermons-wrapper {
-  padding: 128px 110px;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 .main__sermons-titles {
   margin-bottom: 64px;
@@ -357,6 +364,7 @@ body {
 }
 .main__cta-image {
   width: 100%;
+  filter: brightness(0.91);
 }
 .main__cta-inner {
   width: 768px;
@@ -445,4 +453,92 @@ body {
 }
 .main__blog-item-date {
   line-height: 24px;
+}
+
+.footer {
+  background: #161722;
+}
+.footer__container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 64px 0;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__content-left-logo p {
+  margin: 16px 0 32px 0;
+  font-size: 12px;
+  line-height: 14.06px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer__content-left-address {
+  display: flex;
+  flex-direction: column;
+}
+.footer__content-left-address a {
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer__content-left-address a:not(:last-child) {
+  margin-bottom: 16px;
+}
+.footer__links p {
+  margin-bottom: 20px;
+  line-height: 24px;
+  color: #fff;
+}
+.footer__links-list li:not(:last-child) {
+  margin-bottom: 18px;
+}
+.footer__list-link {
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.779);
+}
+.footer__connect p {
+  margin-bottom: 20px;
+  line-height: 24px;
+  color: #fff;
+}
+.footer__social-wrapper {
+  display: flex;
+  gap: 20px;
+}
+.footer__subscription h4 {
+  margin-bottom: 32px;
+  width: 377px;
+  font-size: 32px;
+  line-height: -0.01em;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer__subscription form {
+  width: 512px;
+}
+.footer__subscription form input[type=email] {
+  color: rgba(255, 255, 255, 0.8);
+  width: 311px;
+  padding: 24px 50px 24px 24px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  outline: none;
+}
+.footer__subscription form input[type=email]::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer__subscription form input[type=email]:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer__subscription form input[type=email]::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer__subscription form button {
+  margin-left: -50px;
 }/*# sourceMappingURL=style.css.map */
