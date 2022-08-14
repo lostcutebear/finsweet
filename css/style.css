@@ -541,4 +541,33 @@ body {
 }
 .footer__subscription form button {
   margin-left: -50px;
+}
+
+/* Main section in About.html */
+.main-about {
+  padding-bottom: 128px;
+}
+.main-about__img {
+  width: 100%;
+  position: relative;
+}
+.main-about__header {
+  position: absolute;
+  padding-left: 110px;
+  top: 230px;
+}
+.main-about__header p {
+  margin-bottom: 16px;
+  line-height: 18.75px;
+  font-weight: 700;
+  color: #161722;
+  text-transform: uppercase;
+}
+.main-about__header h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -0.01em;
+  color: #161722;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */

@@ -131,7 +131,7 @@ body {
     &__home-header {
         padding-bottom: 128px;
         position: relative;
-        
+
         & img {
             width: 100%;
         }
@@ -671,6 +671,48 @@ body {
             & button {
                 margin-left: -50px;
             }
+        }
+    }
+}
+
+
+
+/* Main section in About.html */ 
+
+.main-about {
+    padding-bottom: 128px;
+    &__container {
+        
+    }
+
+    &__about-us {
+  
+    }
+
+    &__img {
+        width: 100%;
+        position: relative;
+    }
+
+    &__header {
+        position: absolute;
+        padding-left: 110px;
+        top: 230px;
+        & p {
+            margin-bottom: 16px;
+            line-height: 18.75px;
+            font-weight: 700;
+            color: $black;
+            text-transform: uppercase;
+        }
+
+        & h2 {
+            font-weight: 700;
+            font-size: $heading2;
+            line-height: 64px;
+            letter-spacing: -0.01em;
+            color: $black;
+            text-transform: uppercase;
         }
     }
 }
