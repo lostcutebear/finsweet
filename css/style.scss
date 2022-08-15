@@ -680,15 +680,9 @@ body {
 /* Main section in About.html */ 
 
 .main-about {
-    padding-bottom: 128px;
-    &__container {
-        
-    }
-
     &__about-us {
-  
+        padding-bottom: 128px;
     }
-
     &__img {
         width: 100%;
         position: relative;
