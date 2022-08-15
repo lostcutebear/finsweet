@@ -81,6 +81,16 @@ body {
         text-transform: uppercase;
         line-height: 64px;
     }
+
+    & h4 {
+        margin-bottom: 16px;
+        font-weight: 700;
+        font-size: $heading4;
+        line-height: 44px;
+        letter-spacing: -0.01em;
+        color: $black;
+        text-align: left;
+    }
 }
 
 
@@ -707,6 +717,74 @@ body {
             letter-spacing: -0.01em;
             color: $black;
             text-transform: uppercase;
+        }
+    }
+    
+
+
+    &__welcome-wrapper {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    &__welcome-titles {
+        & h2 {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__welcome-desc {
+        text-align: center;
+        & p {
+            margin: 0 auto 48px auto;
+            width: 768px;
+            line-height: 24px;
+            color: rgba(22, 23, 34, 0.784);
+        }
+    }
+
+    &__welcome-img-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        padding-bottom: 64px;
+    }
+
+    &__welcome-img {
+        & img {
+            border-radius: 32px;
+            transition: .3s linear;
+            &:hover {
+                transform: scale(1.04);
+            }
+        }
+    }
+    
+    &__welcome-bottom-content{
+        padding-bottom: 128px;
+    }
+
+    &__welcome-bottom-content-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    &__welcome-bottom-left-content, &__welcome-bottom-right-content{
+        & p:nth-child(1) {
+            text-align: left;
+        }
+
+        & h4 {
+            width: 371px;
+        }
+
+        & p:nth-child(2) {
+            line-height: 24px;
+            width: 372px;
+            color: rgba(22, 23, 34, 0.779);
         }
     }
 }
