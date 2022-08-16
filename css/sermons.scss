@@ -1,0 +1,55 @@
+$roboto: 'Roboto', sans-serif;
+$roboto-condensed: 'Roboto Condensed', sans-serif;
+
+$heading1: 64px;
+$heading2: 48px;
+$heading3: 40px;
+$heading4: 32px;
+$heading5: 24px;
+$heading6: 16px;
+
+$black: #161722;
+$primary: #FFD2A4;
+$lightorange: #fff5eb;
+$grey: #f5f2f060;
+
+$font700: 700;
+
+.main {
+    &__container{
+        font-family: $roboto-condensed;
+    }
+
+    &__sermons-header{
+        padding-bottom: 128px;
+    }
+
+    &__sermons-header-wrapper{
+        & img {
+            width: 100%;
+            position: relative;
+        }
+    }
+
+    &__sermons-header-content{
+        position: absolute;
+        padding-left: 110px;
+        top: 230px;
+
+        & p {
+            margin-bottom: 16px;
+            line-height: 18.75px;
+            color: #232536;
+            font-weight: $font700;
+        }
+
+        & h2 {
+            font-size: $heading2;
+            line-height: 64px;
+            letter-spacing: -0.01em;
+            color: #232536;
+            font-weight: $font700;
+            text-transform: uppercase;
+        }
+    }
+}
