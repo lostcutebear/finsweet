@@ -2,6 +2,10 @@
   text-transform: uppercase;
 }
 
+.events-content {
+  padding: 80px 40px;
+}
+
 .main__container {
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -45,13 +49,12 @@
   max-width: 1400px;
   margin: 0 auto;
 }
-.main__sermons-content {
-  padding: 80px 40px;
-}
 .main__sermons-item-wrapper {
   display: flex;
+  justify-content: center;
 }
 .main__events-item-wrapper {
   display: flex;
+  justify-content: center;
   gap: 24px;
 }/*# sourceMappingURL=sermons.css.map */

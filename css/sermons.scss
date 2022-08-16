@@ -21,6 +21,10 @@ $font700: 700;
     }
 }
 
+.events-content {
+    padding: 80px 40px;
+}
+
 
 .main {
     &__container{
@@ -78,16 +82,14 @@ $font700: 700;
         margin: 0 auto;
     }
 
-    &__sermons-content {
-        padding: 80px 40px;
-    }
-
     &__sermons-item-wrapper {
         display: flex;
+        justify-content: center;
     }
 
     &__events-item-wrapper {
         display: flex;
+        justify-content: center;
         gap: 24px;
     }
 }
