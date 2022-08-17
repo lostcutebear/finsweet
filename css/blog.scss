@@ -103,7 +103,10 @@ $font700: 700;
     &-blog__post-item {
         padding: 48px 32px;
         background: #fff;
-
+        transition: .3s linear;
+        &:hover {
+            transform: scale(1.03);
+        }
         & p:first-child {
             margin-bottom: 16px;
             font-weight: 700;

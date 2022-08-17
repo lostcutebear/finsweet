@@ -67,6 +67,10 @@
 .main-blog__post-item {
   padding: 48px 32px;
   background: #fff;
+  transition: 0.3s linear;
+}
+.main-blog__post-item:hover {
+  transform: scale(1.03);
 }
 .main-blog__post-item p:first-child {
   margin-bottom: 16px;
