@@ -1,0 +1,162 @@
+$roboto: 'Roboto', sans-serif;
+$roboto-condensed: 'Roboto Condensed', sans-serif;
+
+$heading1: 64px;
+$heading2: 48px;
+$heading3: 40px;
+$heading4: 32px;
+$heading5: 24px;
+$heading6: 16px;
+
+$black: #161722;
+$primary: #FFD2A4;
+$lightorange: #fff5eb;
+$grey: #f5f2f060;
+
+$font700: 700;
+
+.main {
+    &-sermon{
+        padding: 128px 0;
+        background: #e5e5e5;
+    }
+
+    &-sermon__article{
+        max-width: 1320px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 128px;
+    }
+
+    &-sermon__sermons {
+        & img {
+            margin-bottom: 32px;
+        }
+        & p:nth-child(2) {
+            margin-bottom: 16px;
+            font-weight: $font700;
+            font-size: 12px;
+
+            line-height: 14px;
+
+            /* identical to box height */
+
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+
+            /* Gradient */
+
+            background: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        & p:nth-child(4) {
+            margin-bottom: 24px;
+            max-width: 630px;
+            line-height: 24px;
+            color: rgba(22, 23, 34, 0.779);
+        }
+
+        & p:last-child {
+            max-width: 630px;
+            line-height: 24px;
+            color: rgba(22, 23, 34, 0.779);
+        }
+
+        & h2 {
+            margin-bottom: 16px;
+            color: $black;
+            font-size: $heading2;
+            font-weight: $font700;
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
+            line-height: 64px;
+        }
+
+        & blockquote {
+            margin-bottom: 30px;
+            max-width: 608px;
+            font-size: 24px;
+            line-height: 36px;
+            color: rgba(22, 23, 34, 0.781)
+        }
+    }
+
+    &-sermon__register {
+        padding: 40px;
+        background-color: #fff;
+        & h4 {
+            margin-bottom: 32px;
+            font-weight: $font700;
+            font-size: $heading4;
+            line-height: 44px;
+            letter-spacing: -0.01em;
+            color: $black;
+            text-transform: uppercase;
+        }
+    }
+
+    &-sermon__register-date-address {
+        margin-bottom: 32px;
+        display: flex;
+        gap: 15px;
+    }
+
+    &-sermon__register-address, &-sermon__register-date{
+        max-width: 228px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &-sermon__register-address {
+        gap: 10px;
+    }
+
+    &-sermon__register-date{
+        gap: 6px;
+    }
+
+    &-sermon__form-wrapper {
+        margin-bottom: 52px;
+    }
+
+    &-sermon__full-name, &-sermon__email{
+        & label, & input {
+            display: block;
+        } 
+
+        & label {
+            margin-bottom: 12px;
+            font-size: 12px;
+            color: rgba(35, 37, 54, 0.6);
+            font-weight: 500;
+            font-family: $roboto;
+        }
+
+        & input {
+            padding: 8px 8px 8px 0;
+            border: none;
+            border-bottom: 1px solid rgba(35, 37, 54, 0.2);
+            outline: none;
+            width: 100%;
+            font-family: $roboto;
+            font-weight: 500;
+            color: #1D2130;
+            &::placeholder {
+                font-family: $roboto;
+                font-weight: 500;
+                line-height: 24px;
+                color: #1D2130;
+            }
+        }
+    }
+
+    &-sermon__email{
+        margin-top: 32px;
+    }
+}
