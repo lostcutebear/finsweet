@@ -1,0 +1,130 @@
+.main-sermon {
+  padding: 128px 0;
+  background: #e5e5e5;
+}
+.main-sermon__article {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 128px;
+}
+.main-sermon__sermons img {
+  margin-bottom: 32px;
+}
+.main-sermon__sermons p:nth-child(2) {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  /* Gradient */
+  background: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main-sermon__sermons p:nth-child(4) {
+  margin-bottom: 24px;
+  max-width: 630px;
+  line-height: 24px;
+  color: rgba(22, 23, 34, 0.779);
+}
+.main-sermon__sermons p:last-child {
+  max-width: 630px;
+  line-height: 24px;
+  color: rgba(22, 23, 34, 0.779);
+}
+.main-sermon__sermons h2 {
+  margin-bottom: 16px;
+  color: #161722;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  line-height: 64px;
+}
+.main-sermon__sermons blockquote {
+  margin-bottom: 30px;
+  max-width: 608px;
+  font-size: 24px;
+  line-height: 36px;
+  color: rgba(22, 23, 34, 0.781);
+}
+.main-sermon__register {
+  padding: 40px;
+  background-color: #fff;
+}
+.main-sermon__register h4 {
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: -0.01em;
+  color: #161722;
+  text-transform: uppercase;
+}
+.main-sermon__register-date-address {
+  margin-bottom: 32px;
+  display: flex;
+  gap: 15px;
+}
+.main-sermon__register-address, .main-sermon__register-date {
+  max-width: 228px;
+  display: flex;
+  align-items: flex-start;
+}
+.main-sermon__register-address {
+  gap: 10px;
+}
+.main-sermon__register-date {
+  gap: 6px;
+}
+.main-sermon__form-wrapper {
+  margin-bottom: 52px;
+}
+.main-sermon__full-name label, .main-sermon__full-name input, .main-sermon__email label, .main-sermon__email input {
+  display: block;
+}
+.main-sermon__full-name label, .main-sermon__email label {
+  margin-bottom: 12px;
+  font-size: 12px;
+  color: rgba(35, 37, 54, 0.6);
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+.main-sermon__full-name input, .main-sermon__email input {
+  padding: 8px 8px 8px 0;
+  border: none;
+  border-bottom: 1px solid rgba(35, 37, 54, 0.2);
+  outline: none;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #1D2130;
+}
+.main-sermon__full-name input::-moz-placeholder, .main-sermon__email input::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  color: #1D2130;
+}
+.main-sermon__full-name input:-ms-input-placeholder, .main-sermon__email input:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  color: #1D2130;
+}
+.main-sermon__full-name input::placeholder, .main-sermon__email input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  color: #1D2130;
+}
+.main-sermon__email {
+  margin-top: 32px;
+}/*# sourceMappingURL=sermon-event.css.map */
