@@ -1,0 +1,34 @@
+.main-contact {
+  background: #E5E5E5;
+}
+.main-contact__header {
+  padding-bottom: 140px;
+}
+.main-contact__header-wrapper {
+  position: relative;
+}
+.main-contact__header-wrapper img {
+  width: 100%;
+}
+.main-contact__header-text {
+  position: absolute;
+  top: 148px;
+  left: 110px;
+}
+.main-contact__header-text p {
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  color: #FFD2A4;
+  line-height: 19px;
+}
+.main-contact__header-text h2 {
+  max-width: 409px;
+  margin-bottom: 16px;
+  color: #161722;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  line-height: 64px;
+  color: #fff;
+}/*# sourceMappingURL=contact.css.map */
