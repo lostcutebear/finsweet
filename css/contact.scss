@@ -56,4 +56,97 @@ $font700: 700;
             color: #fff;
         }
     }
+
+        
+    &-contact__form{
+      
+    }
+        
+    &-contact__form-wrapper{
+        display: flex;
+        gap: 128px;
+        max-width: 1015px;
+        margin: 0 auto;
+    }
+        
+    &-contact__contact-form{
+        & h5 {
+            margin-bottom: 32px;
+            font-size: $heading5;
+            font-weight: $font700;
+            line-height: 28.13px;
+            letter-spacing: -0.01em;
+            color: $black;
+            text-transform: uppercase;
+        }
+
+        & input {
+            display: block;
+            margin-bottom: 12px;
+        }
+    }
+        
+    &-contact__addresses{
+      
+    }
+        
+    &-contact__address{
+        & p {
+            margin-bottom: 8px;
+            font-size: 18px;
+            line-height: 21px;
+            color: rgba(30, 27, 27, 0.701);
+        }
+
+        & h5 {
+            margin-bottom: 32px;
+            font-size: $heading5;
+            font-weight: $font700;
+            line-height: 28.13px;
+            max-width: 232px;
+            width: 100%;
+            letter-spacing: -0.01em;
+            color: $black;
+            text-transform: uppercase;
+        }
+    }
+        
+    &-contact__details{
+        & p {
+            margin-bottom: 8px;
+            line-height: 21px;
+            color: rgba(30, 27, 27, 0.701);
+        }
+
+        & h5 {
+            font-size: $heading5;
+            font-weight: $font700;
+            line-height: 28.13px;
+            max-width: 232px;
+            width: 100%;
+            letter-spacing: -0.01em;
+            color: $black;
+            text-transform: uppercase;
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+
+            &:last-child {
+                margin-bottom: 32px;
+            }
+        }
+    }
+        
+    &-contact__social{
+        & p {
+            margin-bottom: 8px;
+            line-height: 24px;
+            color: rgba(30, 27, 27, 0.701);
+        }
+    }
+        
+    &-contact__social-icons{
+        display: flex;
+        gap: 32px;
+    }
 }
