@@ -6,6 +6,7 @@ body {
 
 .nav-btn, .btn-primary {
   background: #FFD2A4;
+  border: none;
   border-radius: 12px;
   line-height: 16px;
   color: #1C1D28;
@@ -24,8 +25,13 @@ body {
   padding: 20px 48px;
 }
 
+.btn-primary {
+  padding: 24px 64px;
+}
+
 .btn-secondary {
   cursor: pointer;
+  border: none;
   padding: 24px 64px;
   background: #161722;
   -webkit-backdrop-filter: blur(80px);
@@ -39,10 +45,6 @@ body {
 }
 .btn-secondary:hover {
   color: #fff;
-}
-
-.btn-primary {
-  padding: 24px 64px;
 }
 
 .titles {
@@ -70,6 +72,7 @@ body {
   line-height: 44px;
   letter-spacing: -0.01em;
   color: #161722;
+  text-transform: uppercase;
 }
 
 .header {
@@ -151,6 +154,7 @@ body {
 }
 .main__what-we-do-card-wrapper {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 24px;
 }
@@ -166,6 +170,7 @@ body {
 }
 .main__what-we-do-card-wrapper div h4 {
   margin: 24px 0 8px 0;
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -210,13 +215,13 @@ body {
   padding-bottom: 128px;
 }
 .main__welcome-bottom-titles h4 {
-  font-size: 32px;
   margin-bottom: 16px;
-  color: #161722;
   font-weight: 700;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
+  font-size: 32px;
   line-height: 44px;
+  letter-spacing: -0.01em;
+  color: #161722;
+  text-transform: uppercase;
 }
 .main__welcome-bottom-text p {
   margin: 0 auto 16px auto;
@@ -269,6 +274,7 @@ body {
   font-weight: 700;
   line-height: 28.13px;
   letter-spacing: -0.01em;
+  color: #161722;
   color: #fff;
 }
 .main__benefits-text-wrapper p {
@@ -393,13 +399,13 @@ body {
   padding: 72px 48px;
 }
 .main__cta-content h2 {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 64px;
-  letter-spacing: -0.01em;
+  margin-bottom: 64px;
   color: #161722;
-  width: 368px;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   text-transform: uppercase;
+  line-height: 64px;
 }
 .main__cta-content p {
   width: 302px;
@@ -439,12 +445,11 @@ body {
 .main__blog-item-content h5 {
   width: 218px;
   margin-bottom: 16px;
-  color: #161722;
   font-size: 24px;
   font-weight: 700;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
   line-height: 28.13px;
+  letter-spacing: -0.01em;
+  color: #161722;
 }
 .main__blog-item-desc {
   margin-bottom: 48px;
@@ -520,10 +525,12 @@ body {
 .footer__subscription h4 {
   margin-bottom: 32px;
   width: 377px;
-  font-size: 32px;
-  line-height: -0.01em;
+  margin-bottom: 16px;
   font-weight: 700;
-  color: #fff;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: -0.01em;
+  color: #161722;
   text-transform: uppercase;
 }
 .footer__subscription form {
@@ -575,12 +582,13 @@ body {
   text-transform: uppercase;
 }
 .main-about__header h2 {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 64px;
-  letter-spacing: -0.01em;
+  margin-bottom: 64px;
   color: #161722;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   text-transform: uppercase;
+  line-height: 64px;
 }
 .main-about__welcome-wrapper {
   max-width: 1024px;
@@ -663,9 +671,9 @@ body {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  text-transform: uppercase;
   letter-spacing: -0.01em;
   color: #161722;
+  text-transform: uppercase;
   text-align: left;
 }
 .main-about__benefits-section-text p {
@@ -691,12 +699,11 @@ body {
 }
 .main-about__our-team-member h5 {
   margin-bottom: 8px;
-  font-weight: 700;
   font-size: 24px;
+  font-weight: 700;
   line-height: 28.13px;
   letter-spacing: -0.01em;
   color: #161722;
-  text-transform: uppercase;
 }
 .main-about__our-team-member p {
   margin-bottom: 16px;

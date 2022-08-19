@@ -15,6 +15,46 @@ $grey: #f5f2f060;
 
 $font700: 700;
 
+@mixin heading2 {
+    margin-bottom: 64px;
+    color: $black;
+    font-size: $heading2;
+    font-weight: $font700;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    line-height: 64px;
+}
+
+@mixin heading4 {
+    margin-bottom: 16px;
+    font-weight: $font700;
+    font-size: $heading4;
+    line-height: 44px;
+    letter-spacing: -0.01em;
+    color: $black;
+    text-transform: uppercase;
+}
+
+@mixin heading5 {
+    font-size: $heading5;
+    font-weight: $font700;
+    line-height: 28.13px;
+    letter-spacing: -0.01em;
+    color: #161722;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 body {
     font-family: $roboto-condensed;
     font-weight: 400;
@@ -23,7 +63,7 @@ body {
 
 .nav-btn, .btn-primary {
     background: $primary;
-
+    border: none;
     border-radius: 12px;
     line-height: 16px;
     color: #1C1D28;
@@ -42,8 +82,14 @@ body {
     padding: 20px 48px;
 }
 
+.btn-primary { 
+    padding: 24px 64px;
+}
+
+
 .btn-secondary {
     cursor: pointer;
+    border: none;
     padding: 24px 64px;
     background: #161722;
     backdrop-filter: blur(80px);
@@ -57,11 +103,7 @@ body {
         color: #fff;
     }
 }
-    
 
-.btn-primary { 
-    padding: 24px 64px;
-}
 
 .titles {
     text-align: center;
@@ -73,22 +115,11 @@ body {
     }
 
     & h2 {
-        margin-bottom: 64px;
-        color: $black;
-        font-size: $heading2;
-        font-weight: 700;
-        letter-spacing: -0.01em;
-        text-transform: uppercase;
-        line-height: 64px;
+        @include heading2;
     }
 
     & h4 {
-        margin-bottom: 16px;
-        font-weight: 700;
-        font-size: $heading4;
-        line-height: 44px;
-        letter-spacing: -0.01em;
-        color: $black;
+        @include heading4;
     }
 }
 
@@ -100,9 +131,7 @@ body {
     }
 
     &__nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex;
     }
 
     &__vertical-line {
@@ -114,8 +143,7 @@ body {
     }
 
     &__nav-list {
-        display: flex;
-        align-items: center;
+        @include flex-center;
         gap: 48px;
 
         & li a {
@@ -127,9 +155,7 @@ body {
     }
 
     &__nav-left {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex;
         gap: 50px;
     }
 }
@@ -189,8 +215,7 @@ body {
     }
         
     &__what-we-do-card-wrapper {
-        display: flex;
-        align-items: center;
+        @include flex;
         gap: 24px;
 
         & div {
@@ -206,12 +231,7 @@ body {
 
             & h4 {
                 margin: 24px 0 8px 0;
-                font-weight: 700;
-                font-size: $heading4;
-                line-height: 44px;
-                letter-spacing: -0.01em;
-                color: $black;
-                text-transform: uppercase;
+                @include heading4;
             }
 
             & p {
@@ -267,13 +287,7 @@ body {
 
     &__welcome-bottom-titles {
         & h4 {
-            font-size: $heading4;
-            margin-bottom: 16px;
-            color: $black;
-            font-weight: 700;
-            letter-spacing: -0.01em;
-            text-transform: uppercase;
-            line-height: 44px;
+            @include heading4;
         }
     }
 
@@ -308,8 +322,7 @@ body {
     }
 
     &__benefits-img-wrapper {
-        display: flex;
-        justify-content: center;
+        @include flex-center;
         gap: 24px;
     }
 
@@ -336,10 +349,7 @@ body {
 
         & h5 {
             max-width: 238px;
-            font-size: $heading5;
-            font-weight: 700;
-            line-height: 28.13px;
-            letter-spacing: -0.01em;
+            @include heading5;
             color: #fff;
         }
 
@@ -383,11 +393,7 @@ body {
         top: 32px;
         right: 32px;
         & h5 {
-            font-size: $heading5;
-            font-weight: 700;
-            line-height: 28.13px;
-            letter-spacing: -0.01em;
-            color: $black;
+            @include heading5;
         }
 
         & p {
@@ -413,11 +419,7 @@ body {
         & h5 {
             margin-bottom: 16px;
             width: 210px;
-            font-size: $heading5;
-            font-weight: 700;
-            line-height: 28.13px;
-            letter-spacing: -0.01em;
-            color: $black;
+            @include heading5;
         }
 
         & p:last-child {
@@ -486,21 +488,14 @@ body {
     }
     
     &__cta-inner-wrapper {
-        display: flex;
-        align-items: center;
+        @include flex-center;
         gap: 117px;
         padding: 72px 48px;
     }
     
     &__cta-content {
         & h2 {
-            font-weight: 700;
-            font-size: $heading2;
-            line-height: 64px;
-            letter-spacing: -0.01em;
-            color: $black;
-            width: 368px;
-            text-transform: uppercase;
+            @include heading2;
         }
 
         & p {
@@ -522,9 +517,7 @@ body {
     }
 
     &__blog-item-wrapper{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         gap: 24px;
     }
     
@@ -550,12 +543,7 @@ body {
         & h5 {
             width: 218px;
             margin-bottom: 16px;
-            color: $black;
-            font-size: $heading5;
-            font-weight: 700;
-            letter-spacing: -0.01em;
-            text-transform: uppercase;
-            line-height: 28.13px;
+            @include heading5;
         }
     }
 
@@ -655,11 +643,7 @@ body {
         & h4 {
             margin-bottom: 32px;
             width: 377px;
-            font-size: $heading4;
-            line-height: -0.01em;
-            font-weight: 700;
-            color: #fff;
-            text-transform: uppercase;
+            @include heading4;
         }
 
         & form {
@@ -711,12 +695,7 @@ body {
         }
 
         & h2 {
-            font-weight: 700;
-            font-size: $heading2;
-            line-height: 64px;
-            letter-spacing: -0.01em;
-            color: $black;
-            text-transform: uppercase;
+            @include heading2;
         }
     }
     
@@ -744,9 +723,7 @@ body {
     }
 
     &__welcome-img-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         gap: 24px;
         padding-bottom: 64px;
     }
@@ -766,9 +743,7 @@ body {
     }
 
     &__welcome-bottom-content-wrapper{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         gap: 25px;
     }
 
@@ -825,13 +800,7 @@ body {
       
     &__benefits-section-text{
         & h4 {
-            margin-bottom: 16px;
-            font-weight: 700;
-            font-size: $heading4;
-            line-height: 44px;
-            text-transform: uppercase;
-            letter-spacing: -0.01em;
-            color: $black;
+            @include heading4;
             text-align: left;
         }
 
@@ -853,8 +822,7 @@ body {
     }
       
     &__our-team-members-wrapper{
-        display: flex;
-        justify-content: center;
+        @include flex-center;
         gap: 24px;
     }
       
@@ -864,12 +832,7 @@ body {
         text-align: center;
         & h5 {
             margin-bottom: 8px;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 28.13px;
-            letter-spacing: -0.01em;
-            color: $black;
-            text-transform: uppercase;
+            @include heading5;
         }
 
         & p {
@@ -886,8 +849,7 @@ body {
     }
 
     &__our-team-member-social{
-        display: flex;
-        justify-content: center;
+        @include flex-center;
         gap: 20px;
     }
 }
