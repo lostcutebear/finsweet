@@ -59,7 +59,7 @@ $font700: 700;
 
         
     &-contact__form{
-      
+        padding-bottom: 128px;
     }
         
     &-contact__form-wrapper{
@@ -82,12 +82,42 @@ $font700: 700;
 
         & input {
             display: block;
+            max-width: 624px;
+            width: 100%;
             margin-bottom: 12px;
+            padding: 20px;
+            border: none;
+            outline: none;
+            background: #FFFFFF;
+            border-radius: 4px;
+            color: #161722;
+            &::placeholder { 
+                color: #161722;
+                line-height: 24px;
+            }
         }
-    }
-        
-    &-contact__addresses{
-      
+
+        & textarea {
+            margin-bottom: 12px;
+            max-width: 624px;
+            font-family: $roboto-condensed;
+            width: 100%;
+            padding: 24px;
+            color: #161722;
+            border: none;
+            outline: none;
+            resize: none;
+            border-radius: 4px;
+            &::placeholder {
+                color: #161722;
+            }
+        }
+
+        & button {
+            border: none;
+            max-width: 100%;
+            width: 100%;
+        }
     }
         
     &-contact__address{
