@@ -1,0 +1,182 @@
+$roboto: 'Roboto', sans-serif;
+$roboto-condensed: 'Roboto Condensed', sans-serif;
+
+$heading1: 64px;
+$heading2: 48px;
+$heading3: 40px;
+$heading4: 32px;
+$heading5: 24px;
+$heading6: 16px;
+
+$black: #161722;
+$primary: #FFD2A4;
+$lightorange: #fff5eb;
+$grey: #f5f2f060;
+
+$font700: 700;
+
+.main {
+    &-contact{
+        background: #E5E5E5;
+    }
+
+    &-contact__header{
+        padding-bottom: 140px;
+    }
+    
+    &-contact__header-wrapper {
+        position: relative;
+        & img {
+            width: 100%;
+        }
+
+    }
+    
+    &-contact__header-text {
+        position: absolute;
+        top: 148px;
+        left: 110px;
+        
+        & p {
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            color: $primary;
+            line-height: 19px;
+        }
+
+        & h2 {
+            max-width: 409px;
+            margin-bottom: 16px;
+            color: $black;
+            font-size: $heading2;
+            font-weight: $font700;
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
+            line-height: 64px;
+            color: #fff;
+        }
+    }
+
+        
+    &-contact__form{
+        padding-bottom: 128px;
+    }
+        
+    &-contact__form-wrapper{
+        display: flex;
+        gap: 128px;
+        max-width: 1015px;
+        margin: 0 auto;
+    }
+        
+    &-contact__contact-form{
+        & h5 {
+            margin-bottom: 32px;
+            font-size: $heading5;
+            font-weight: $font700;
+            line-height: 28.13px;
+            letter-spacing: -0.01em;
+            color: $black;
+            text-transform: uppercase;
+        }
+
+        & input {
+            display: block;
+            max-width: 624px;
+            width: 100%;
+            margin-bottom: 12px;
+            padding: 20px;
+            border: none;
+            outline: none;
+            background: #FFFFFF;
+            border-radius: 4px;
+            color: #161722;
+            &::placeholder { 
+                color: #161722;
+                line-height: 24px;
+            }
+        }
+
+        & textarea {
+            margin-bottom: 12px;
+            max-width: 624px;
+            font-family: $roboto-condensed;
+            width: 100%;
+            padding: 24px;
+            color: #161722;
+            border: none;
+            outline: none;
+            resize: none;
+            border-radius: 4px;
+            &::placeholder {
+                color: #161722;
+            }
+        }
+
+        & button {
+            border: none;
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+        
+    &-contact__address{
+        & p {
+            margin-bottom: 8px;
+            font-size: 18px;
+            line-height: 21px;
+            color: rgba(30, 27, 27, 0.701);
+        }
+
+        & h5 {
+            margin-bottom: 32px;
+            font-size: $heading5;
+            font-weight: $font700;
+            line-height: 28.13px;
+            max-width: 232px;
+            width: 100%;
+            letter-spacing: -0.01em;
+            color: $black;
+            text-transform: uppercase;
+        }
+    }
+        
+    &-contact__details{
+        & p {
+            margin-bottom: 8px;
+            line-height: 21px;
+            color: rgba(30, 27, 27, 0.701);
+        }
+
+        & h5 {
+            font-size: $heading5;
+            font-weight: $font700;
+            line-height: 28.13px;
+            max-width: 232px;
+            width: 100%;
+            letter-spacing: -0.01em;
+            color: $black;
+            text-transform: uppercase;
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+
+            &:last-child {
+                margin-bottom: 32px;
+            }
+        }
+    }
+        
+    &-contact__social{
+        & p {
+            margin-bottom: 8px;
+            line-height: 24px;
+            color: rgba(30, 27, 27, 0.701);
+        }
+    }
+        
+    &-contact__social-icons{
+        display: flex;
+        gap: 32px;
+    }
+}
