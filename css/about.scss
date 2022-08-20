@@ -1,0 +1,242 @@
+$roboto: 'Roboto', sans-serif;
+$roboto-condensed: 'Roboto Condensed', sans-serif;
+
+$heading1: 64px;
+$heading2: 48px;
+$heading3: 40px;
+$heading4: 32px;
+$heading5: 24px;
+$heading6: 16px;
+
+$black: #161722;
+$primary: #FFD2A4;
+$lightorange: #fff5eb;
+$grey: #f5f2f060;
+
+$font700: 700;
+
+@mixin heading2 {
+    margin-bottom: 64px;
+    color: $black;
+    font-size: $heading2;
+    font-weight: $font700;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    line-height: 64px;
+}
+
+@mixin heading4 {
+    margin-bottom: 16px;
+    font-weight: $font700;
+    font-size: $heading4;
+    line-height: 44px;
+    letter-spacing: -0.01em;
+    color: $black;
+    text-transform: uppercase;
+}
+
+@mixin heading5 {
+    font-size: $heading5;
+    font-weight: $font700;
+    line-height: 28.13px;
+    letter-spacing: -0.01em;
+    color: #161722;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main About */
+
+.main-about {
+    overflow-x: hidden;
+    &__about-us {
+        padding-bottom: 128px;
+    }
+
+    &__img {
+        width: 100%;
+        position: relative;
+    }
+
+    &__header {
+        position: absolute;
+        padding-left: 110px;
+        top: 230px;
+        & p {
+            margin-bottom: 16px;
+            line-height: 18.75px;
+            font-weight: $font700;
+            color: $black;
+            text-transform: uppercase;
+        }
+
+        & h2 {
+            @include heading2;
+        }
+    }
+    
+    /* Section Welcome */
+
+    &__welcome-wrapper {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    &__welcome-titles {
+        & h2 {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__welcome-desc {
+        text-align: center;
+        & p {
+            margin: 0 auto 48px auto;
+            width: 768px;
+            line-height: 24px;
+            color: rgba(22, 23, 34, 0.784);
+        }
+    }
+
+    &__welcome-img-wrapper {
+        @include flex-center;
+        gap: 24px;
+        padding-bottom: 64px;
+    }
+
+    &__welcome-img {
+        & img {
+            border-radius: 32px;
+            transition: .3s linear;
+            &:hover {
+                transform: scale(1.04);
+            }
+        }
+    }
+    
+    &__welcome-bottom-content{
+        padding-bottom: 128px;
+    }
+
+    &__welcome-bottom-content-wrapper{
+        @include flex-center;
+        gap: 25px;
+    }
+
+    &__welcome-bottom-left-content, &__welcome-bottom-right-content{
+        & p:nth-child(1) {
+            text-align: left;
+        }
+
+        & h4 {
+            width: 371px;
+            text-align: left;
+        }
+
+        & p:nth-child(2) {
+            line-height: 24px;
+            width: 372px;
+            color: rgba(22, 23, 34, 0.779);
+        }
+    }
+
+    /* Section Benefits */
+
+    &__benefits {
+        padding-bottom: 128px;
+    }
+      
+    &__benefits-wrapper {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+      
+    &__benefits-titles {
+        & h2 {
+            margin: 0 auto 64px auto;
+            width: 432px;
+        }
+    }
+      
+    &__benefits-section-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 96px;
+    }
+      
+    &__benefits-section {
+        @include flex-center;
+        gap: 48px;
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    }
+      
+    &__benefits-section-text {
+        & h4 {
+            @include heading4;
+            text-align: left;
+        }
+
+        & p {
+            line-height: 24px;
+            color: rgba(22, 23, 34, 0.779);
+        }
+    }
+
+    /* Section Our Team */
+
+    &__our-team {
+        padding-bottom: 128px;
+    }
+      
+    &__our-team-wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+      
+    &__our-team-members-wrapper {
+        @include flex-center;
+        gap: 24px;
+    }
+      
+    &__our-team-member {
+        padding: 48px 75px;
+        background: #F5F2F0;
+        text-align: center;
+        & h5 {
+            margin-bottom: 8px;
+            @include heading5;
+        }
+
+        & p {
+            margin-bottom: 16px;
+            line-height: 24px;
+            color: rgba(22, 23, 34, 0.703);
+        }
+    }
+    
+    &__our-team-img {
+        margin-bottom: 26px;
+        border-radius: 50%;
+        border: 8px solid #FFFFFF;
+    }
+
+    &__our-team-member-social {
+        @include flex-center;
+        gap: 20px;
+    }
+}
+
+
+
