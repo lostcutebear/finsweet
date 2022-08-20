@@ -1,3 +1,7 @@
+/* Main */
+.main {
+  /* Section Sermon */
+}
 .main-sermon {
   padding: 128px 0;
   background: #e5e5e5;
@@ -40,13 +44,14 @@
   color: rgba(22, 23, 34, 0.779);
 }
 .main-sermon__sermons h2 {
-  margin-bottom: 16px;
+  margin-bottom: 64px;
   color: #161722;
   font-size: 48px;
   font-weight: 700;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   line-height: 64px;
+  margin-bottom: 16px;
 }
 .main-sermon__sermons blockquote {
   margin-bottom: 30px;
@@ -60,7 +65,7 @@
   background-color: #fff;
 }
 .main-sermon__register h4 {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;

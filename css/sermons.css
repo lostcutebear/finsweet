@@ -6,6 +6,11 @@
   padding: 80px 40px;
 }
 
+/* Main */
+.main {
+  /* Section Sermons Header */
+  /* Section Events */
+}
 .main__container {
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -25,22 +30,23 @@
   font-weight: 700;
 }
 .main__sermons-header-content h2 {
+  margin-bottom: 64px;
+  color: #161722;
   font-size: 48px;
-  line-height: 64px;
-  letter-spacing: -0.01em;
-  color: #232536;
   font-weight: 700;
+  letter-spacing: -0.01em;
   text-transform: uppercase;
+  line-height: 64px;
 }
 .main__events-heading h2 {
   margin-bottom: 64px;
-  text-align: center;
+  color: #161722;
   font-size: 48px;
-  line-height: 64px;
-  letter-spacing: -0.01em;
-  color: #232536;
   font-weight: 700;
+  letter-spacing: -0.01em;
   text-transform: uppercase;
+  line-height: 64px;
+  text-align: center;
 }
 .main__events {
   padding-bottom: 128px;
@@ -52,9 +58,11 @@
 .main__sermons-item-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .main__events-item-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 24px;
 }/*# sourceMappingURL=sermons.css.map */

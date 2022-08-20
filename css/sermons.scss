@@ -15,6 +15,22 @@ $grey: #f5f2f060;
 
 $font700: 700;
 
+@mixin heading2 {
+    margin-bottom: 64px;
+    color: $black;
+    font-size: $heading2;
+    font-weight: $font700;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    line-height: 64px;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .events-title {
     & h5 {
         text-transform: uppercase;
@@ -25,11 +41,14 @@ $font700: 700;
     padding: 80px 40px;
 }
 
+/* Main */
 
 .main {
     &__container{
         font-family: $roboto-condensed;
     }
+
+    /* Section Sermons Header */
 
     &__sermons-header-wrapper{
         & img {
@@ -51,25 +70,16 @@ $font700: 700;
         }
 
         & h2 {
-            font-size: $heading2;
-            line-height: 64px;
-            letter-spacing: -0.01em;
-            color: #232536;
-            font-weight: $font700;
-            text-transform: uppercase;
+            @include heading2;
         }
     }
 
+    /* Section Events */
+
     &__events-heading {
         & h2 {
-            margin-bottom: 64px;
+            @include heading2;
             text-align: center;
-            font-size: $heading2;
-            line-height: 64px;
-            letter-spacing: -0.01em;
-            color: #232536;
-            font-weight: $font700;
-            text-transform: uppercase;
         }
     }
 
@@ -83,13 +93,11 @@ $font700: 700;
     }
 
     &__sermons-item-wrapper {
-        display: flex;
-        justify-content: center;
+        @include flex-center;
     }
 
     &__events-item-wrapper {
-        display: flex;
-        justify-content: center;
+        @include flex-center;
         gap: 24px;
     }
 }

@@ -23,7 +23,7 @@
 }
 .main-contact__header-text h2 {
   max-width: 409px;
-  margin-bottom: 16px;
+  margin-bottom: 64px;
   color: #161722;
   font-size: 48px;
   font-weight: 700;
@@ -108,11 +108,11 @@
 }
 .main-contact__address h5 {
   margin-bottom: 32px;
+  max-width: 242px;
+  width: 100%;
   font-size: 24px;
   font-weight: 700;
   line-height: 28.13px;
-  max-width: 232px;
-  width: 100%;
   letter-spacing: -0.01em;
   color: #161722;
   text-transform: uppercase;
@@ -126,11 +126,11 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 28.13px;
-  max-width: 232px;
-  width: 100%;
   letter-spacing: -0.01em;
   color: #161722;
   text-transform: uppercase;
+  max-width: 232px;
+  width: 100%;
 }
 .main-contact__details h5:not(:last-child) {
   margin-bottom: 8px;

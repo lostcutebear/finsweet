@@ -6,14 +6,40 @@ $heading2: 48px;
 $heading3: 40px;
 $heading4: 32px;
 $heading5: 24px;
-$heading6: 16px;
 
 $black: #161722;
 $primary: #FFD2A4;
 $lightorange: #fff5eb;
-$grey: #f5f2f060;
 
 $font700: 700;
+
+@mixin heading2 {
+    margin-bottom: 64px;
+    color: $black;
+    font-size: $heading2;
+    font-weight: $font700;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    line-height: 64px;
+}
+
+@mixin heading4 {
+    margin-bottom: 16px;
+    font-weight: $font700;
+    font-size: $heading4;
+    line-height: 44px;
+    letter-spacing: -0.01em;
+    color: $black;
+    text-transform: uppercase;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main */
 
 .main {
     &-blog {
@@ -30,6 +56,8 @@ $font700: 700;
         padding-bottom: 128px;
     }
 
+    /* Section Header Titles */ 
+
     &-header__titles{
         padding: 128px 0 64px 0;
     }
@@ -40,9 +68,7 @@ $font700: 700;
     }
 
     &-header__post-wrapper{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         gap: 48px;
     }
 
@@ -60,12 +86,7 @@ $font700: 700;
 
     &-header__post-desc-wrapper {
         & h4 {
-            font-weight: 700;
-            font-size: $heading4;
-            line-height: 44px;
-            letter-spacing: -0.01em;
-            color: $black;
-            text-transform: uppercase;
+            @include heading4;
         }
         
         & p {
@@ -75,20 +96,15 @@ $font700: 700;
         }
     }
 
+    /* Section Blog Posts */
+
     &-blog__posts {
         & h2 {
+            @include heading2;
             text-align: center;
-            margin-bottom: 64px;
-            color: $black;
-            font-size: $heading2;
-            font-weight: 700;
-            letter-spacing: -0.01em;
-            text-transform: uppercase;
-            line-height: 64px;
         }
     }
 
-    
     &-blog__posts{
         padding-bottom: 128px;
     }

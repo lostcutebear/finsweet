@@ -1,21 +1,41 @@
 $roboto: 'Roboto', sans-serif;
 $roboto-condensed: 'Roboto Condensed', sans-serif;
 
-$heading1: 64px;
 $heading2: 48px;
 $heading3: 40px;
 $heading4: 32px;
 $heading5: 24px;
-$heading6: 16px;
 
 $black: #161722;
 $primary: #FFD2A4;
 $lightorange: #fff5eb;
-$grey: #f5f2f060;
 
 $font700: 700;
 
+@mixin heading2 {
+    margin-bottom: 64px;
+    color: $black;
+    font-size: $heading2;
+    font-weight: $font700;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    line-height: 64px;
+}
+
+@mixin heading4 {
+    margin-bottom: 16px;
+    font-weight: $font700;
+    font-size: $heading4;
+    line-height: 44px;
+    letter-spacing: -0.01em;
+    color: $black;
+    text-transform: uppercase;
+}
+
+/* Main */
+
 .main {
+    /* Section Sermon */
     &-sermon{
         padding: 128px 0;
         background: #e5e5e5;
@@ -69,13 +89,8 @@ $font700: 700;
         }
 
         & h2 {
+            @include heading2;
             margin-bottom: 16px;
-            color: $black;
-            font-size: $heading2;
-            font-weight: $font700;
-            letter-spacing: -0.01em;
-            text-transform: uppercase;
-            line-height: 64px;
         }
 
         & blockquote {
@@ -91,13 +106,7 @@ $font700: 700;
         padding: 40px;
         background-color: #fff;
         & h4 {
-            margin-bottom: 32px;
-            font-weight: $font700;
-            font-size: $heading4;
-            line-height: 44px;
-            letter-spacing: -0.01em;
-            color: $black;
-            text-transform: uppercase;
+            @include heading4;
         }
     }
 
@@ -107,7 +116,7 @@ $font700: 700;
         gap: 15px;
     }
 
-    &-sermon__register-address, &-sermon__register-date{
+    &-sermon__register-address, &-sermon__register-date {
         max-width: 228px;
         display: flex;
         align-items: flex-start;
@@ -117,7 +126,7 @@ $font700: 700;
         gap: 10px;
     }
 
-    &-sermon__register-date{
+    &-sermon__register-date {
         gap: 6px;
     }
 
@@ -125,7 +134,7 @@ $font700: 700;
         margin-bottom: 52px;
     }
 
-    &-sermon__full-name, &-sermon__email{
+    &-sermon__full-name, &-sermon__email {
         & label, & input {
             display: block;
         } 
